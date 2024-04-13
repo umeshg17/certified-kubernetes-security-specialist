@@ -1,4 +1,4 @@
-# Certified Kubernetes Security Specialist - KPLABS Course
+# Certified Kubernetes Security Specialist (CKS)
 
 This is a central document which contains all the commands and code files used throughout the video course.
 
@@ -12,6 +12,17 @@ This is a central document which contains all the commands and code files used t
 | 4 | [Domain 4 - System Hardening][PlDe] |
 | 5 | [Domain 5 - Supply Chain Security][PlDf] |
 | 6 | [Domain 6 - Monitoring, Logging and Runtime Security][PlDg] |
+
+# Resources Allowed During Exam
+
+| Document | Link |
+| ------ | ------ |
+| Kubernetes Docs | [https://kubernetes.io/docs/](https://kubernetes.io/docs/) |
+| Kubernetes Blogs | [https://kubernetes.io/blog/](https://kubernetes.io/blog/) |
+| Trivy documentation | [https://aquasecurity.github.io/trivy/](https://aquasecurity.github.io/trivy/) |
+| Falco documentation | [https://falco.org/docs/](https://falco.org/docs/) |
+| etcd documentation | [https://etcd.io/docs/](https://etcd.io/docs/) |
+| App Armor | [https://gitlab.com/apparmor/apparmor/-/wikis/Documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation) |
 
 
 
