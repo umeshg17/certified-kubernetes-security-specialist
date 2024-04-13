@@ -1,6 +1,6 @@
 #### Documentation Link:
 
-https://github.com/etcd-io/etcd/releases/tag/v3.5.4
+https://github.com/etcd-io/etcd/releases/tag/v3.5.12
 
 #### Pre-Requisite:
 ```sh
@@ -14,9 +14,11 @@ cd /root/binaries
 ```
 #### Step 2: Download and Copy the ETCD Binaries to Path
 ```sh
-wget https://github.com/etcd-io/etcd/releases/download/v3.5.4/etcd-v3.5.4-linux-amd64.tar.gz
-tar -xzvf etcd-v3.5.4-linux-amd64.tar.gz
-cd etcd-v3.5.4-linux-amd64
+ETCD_VER=v3.5.12
+GITHUB_URL=https://github.com/etcd-io/etcd/releases/download
+curl -L ${GITHUB_URL}/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz -o /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz
+tar xzvf /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz
+cd etcd-${ETCD_VER}-linux-amd64
 cp etcd etcdctl /usr/local/bin/
 ```
 #### Step 3: Start ETCD from CLI
@@ -26,8 +28,8 @@ etcd
 
 #### Step 4: Verification - Adding and Removing Data to ETCD
 ```sh
-etcdctl put course "kplabs-cks course is awesome"
+etcdctl put course "cks course is awesome"
 ```
 ```sh
- etcdctl get course
- ```
+etcdctl get course
+```
