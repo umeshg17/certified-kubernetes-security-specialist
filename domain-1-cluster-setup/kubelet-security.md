@@ -32,12 +32,12 @@ curl -k -X GET https://localhost:10250/pods
 https://github.com/cyberark/kubeletctl
 
 ```sh
-curl -LO https://github.com/cyberark/kubeletctl/releases/download/v1.6/kubeletctl_linux_amd64 && chmod a+x ./kubeletctl_linux_amd64 && mv ./kubeletctl_linux_amd64 /usr/local/bin/kubeletctl
+curl -LO https://github.com/cyberark/kubeletctl/releases/download/v1.9/kubeletctl_linux_amd64 && chmod a+x ./kubeletctl_linux_amd64 && mv ./kubeletctl_linux_amd64 /usr/local/bin/kubeletctl
 ```
 
 ```sh
 kubeletctl pods -i
-kubeletctl run "whoami" --all-pods -i
+kubeletctl run "whoami" --all-pods -i # not working
 ```
 
 #### Step 5 Verify the certificate of the kubelet for node authorizer group:
